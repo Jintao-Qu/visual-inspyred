@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import re_path
-from apps.overview.views import get_overview
+from apps.TSP_ACO.views import get_tsp_aco_form
 from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path('^overview/$', TemplateView.as_view(template_name='overview.html'), name="overview"),
-    re_path('^tsp_aco_form/$', TemplateView.as_view(template_name='tsp_aco_form.html'), name="tsp_aco_form"),
+    re_path('^tsp_aco_form/$', get_tsp_aco_form),
     re_path('^documentation/$', TemplateView.as_view(template_name='documentation.html'), name="documentation"),
     re_path('^01knapsack_ga_form/$', TemplateView.as_view(template_name='01knapsack_ga_form.html'), name="01knapsack_ga_form"),
     re_path('^motifmining_pso_form/$', TemplateView.as_view(template_name='motifmining_pso_form.html'), name="motifmining_pso_form"),

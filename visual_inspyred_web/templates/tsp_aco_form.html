@@ -48,6 +48,12 @@
 		<script src="/static/assets/js/html5shiv.js"></script>
 		<script src="/static/assets/js/respond.min.js"></script>
 		<![endif]-->
+		<script type="text/javascript">
+			function formSubmit()
+			{
+				document.getElementById("config").submit()
+			}
+		</script>
 	</head>
 
 	<body>
@@ -271,8 +277,8 @@
 						<div class="row">
 							<div class="col-xs-12">
 								<!-- PAGE CONTENT BEGINS -->
-								<form class="form-horizontal" role="form">
-									
+								<form class="form-horizontal" id="config" role="form" method="post" action="/tsp_aco_form/">
+									{% csrf_token %}
 									<h4 class="header smaller lighter blue">
 										basic parameters
 										<small></small>
@@ -282,7 +288,7 @@
 
 										<div class="col-sm-9">
 											
-											<select  id="form-field-select-2" class="col-xs-10 col-sm-5">
+											<select name="dataset" id="form-field-select-2" class="col-xs-10 col-sm-5">
 													<option value="att48.tsp" selected="selected">att48.tsp</option>
 													<option value="a280.tsp">a280.tsp</option>
 													<option value="ali35.tsp">ali35.tsp</option>
@@ -300,7 +306,7 @@
 										<label class="col-sm-3 control-label no-padding-right" for="spinner1">Populations</label>
 										
 										<div class="col-sm-9">
-											<input type="text" class="input-mini" id="spinner1" style="width:170px" />
+											<input name="populations" type="text" class="input-mini" id="spinner1" style="width:170px" />
 													
 											
 										</div>
@@ -309,7 +315,7 @@
 										<label class="col-sm-3 control-label no-padding-right" for="spinner1">Iterations</label>
 										
 										<div class="col-sm-9">
-											<input type="text" class="input-mini" id="spinner2" style="width:170px" />
+											<input name="iterations" type="text" class="input-mini" id="spinner2" style="width:170px" />
 													
 											
 										</div>
@@ -320,7 +326,7 @@
 									</h4>			
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
-											<button class="btn btn-info" type="button">
+											<button class="btn btn-info" type="button" onclick="formSubmit()">
 												<i class="icon-ok bigger-110"></i>
 												Submit
 											</button>
@@ -332,7 +338,7 @@
 											</button>
 										</div>
 									</div>			
-
+									
 								</form>	
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
