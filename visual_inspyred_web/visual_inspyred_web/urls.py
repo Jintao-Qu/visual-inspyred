@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import re_path
 from apps.TSP_ACO.views import get_tsp_aco_form
+from apps.output.views import output
 from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,5 +30,6 @@ urlpatterns = [
     re_path('^01knapsack_data/$', TemplateView.as_view(template_name='01knapsack_data.html'), name="01knapsack_data"),
     re_path('^motifmining_data/$', TemplateView.as_view(template_name='motifmining_data.html'), name="motifmining_data"),
     re_path('^downloads/$', TemplateView.as_view(template_name='downloads.html'), name="downloads"),
-    re_path('^about/$', TemplateView.as_view(template_name='about.html'), name="about")
+    re_path('^about/$', TemplateView.as_view(template_name='about.html'), name="about"),
+    re_path('^output/$', output)
 ]

@@ -51,6 +51,7 @@
 		<script type="text/javascript">
 			function formSubmit()
 			{
+				
 				document.getElementById("config").submit()
 			}
 		</script>
@@ -289,15 +290,13 @@
 										<div class="col-sm-9">
 											
 											<select name="dataset" id="form-field-select-2" class="col-xs-10 col-sm-5">
-													<option value="att48.tsp">att48.tsp</option>
-													<option value="a280.tsp">a280.tsp</option>
 													<option value="ali35.tsp">ali35.tsp</option>
+													<option value="a280.tsp">a280.tsp</option>
 													<option value="berlin52.tsp">berlin52.tsp</option>
 													<option value="ch130.tsp">ch130.tsp</option>
 													<option value="ch150.tsp">ch150.tsp</option>
 													<option value="eli51.tsp">eli51.tsp</option>
 													<option value="eli76.tsp">eli76.tsp</option>
-								
 											</select>
 										</div>
 									</div>
@@ -321,8 +320,21 @@
 										</div>
 									</div>
 									<h4 class="header smaller lighter blue">
-										basic parameters
-										<small></small>
+										bias
+										<small>the bias in selecting the component of maximum desirability</small>
+									</h4>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="spinner1">Biats</label>
+										
+										<div class="col-sm-9">
+											<input name="biats" type="text" class="input-mini" id="spinner3" style="width:170px" />
+													
+											
+										</div>
+									</div>
+									<h4 class="header smaller lighter blue">
+										bias
+										<small>the bias in selecting the component of maximum desirability</small>
 									</h4>			
 									<div class="clearfix form-actions">
 										<div class="col-md-offset-3 col-md-9">
@@ -642,12 +654,12 @@
 			
 			
 			
-				$('#spinner1').ace_spinner({value:0,min:0,max:200,step:10, btn_up_class:'btn-info' , btn_down_class:'btn-info'})
+				$('#spinner1').ace_spinner({value:16,min:0,max:206,step:10, btn_up_class:'btn-info' , btn_down_class:'btn-info'})
 				.on('change', function(){
 					//alert(this.value)
 				});
-				$('#spinner2').ace_spinner({value:0,min:0,max:1000,step:100, touch_spinner: true, icon_up:'icon-caret-up', icon_down:'icon-caret-down'});
-				$('#spinner3').ace_spinner({value:0,min:-100,max:100,step:10, on_sides: true, icon_up:'icon-plus smaller-75', icon_down:'icon-minus smaller-75', btn_up_class:'btn-success' , btn_down_class:'btn-danger'});
+				$('#spinner2').ace_spinner({value:300,min:0,max:1000,step:100, touch_spinner: true, icon_up:'icon-caret-up', icon_down:'icon-caret-down'});
+				$('#spinner3').ace_spinner({value:0.500,min:0.000,max:1.000,step:0.02, on_sides: true, icon_up:'icon-plus smaller-75', icon_down:'icon-minus smaller-75', btn_up_class:'btn-success' , btn_down_class:'btn-danger'});
 			
 			
 				
