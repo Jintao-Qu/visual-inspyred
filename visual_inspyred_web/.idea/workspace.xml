@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b72a129-5be6-4d95-8867-b2248d9bb091" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/algorithms/tsp/acs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/tsp/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/tsp/observers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/tsp/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/tsp/tsp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithms/tsp/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/output/migrations/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algorithms/tsp/aco.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithms/tsp/tsp_aco.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/TSP_ACO/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/TSP_ACO/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/01knapsack_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/01knapsack_data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tsp_aco_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tsp_aco_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/tsp_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tsp_data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_inspyred_web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/visual_inspyred_web/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +185,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="322" />
     <option name="y" value="247" />
     <option name="width" value="1001" />
@@ -601,7 +588,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63697000" />
+    <option name="totallyTimeSpent" value="63822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
